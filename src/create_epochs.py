@@ -58,6 +58,6 @@ def epoching(eeglab_raw, eeglab_epochs, BDF_txt, elist_txt):
 
     events = np.array([i for i in events if i[2] in [old_event_id[v] for v in bins.values()]])
     
-    # how does MNE know tmax (i.e., epoch end time)???
+    # Question: How does MNE know tmax, i.e., epoch end time? (Hint: Numpy.ndarray.shape)
     epochs = mne.EpochsArray(data=eeglab_epochs.get_data(), info=eeglab_epochs.info, events=events, tmin=-0.1, event_id=event_id)
     return epochs
