@@ -1,0 +1,31 @@
+Bin 1
+LVF_G_NP_Correct
+.{221}{201}{1-136}{230}
+
+Bin 2
+LVF_UG_NP_Correct
+.{221}{205}{1-136}{240}
+
+Bin 3
+LVF_G_VP_Correct
+.{221}{202}{1-136}{230}
+
+Bin 4
+LVF_UG_VP_Correct
+.{221}{206}{1-136}{240}
+
+Bin 5
+RVF_G_NP_Correct
+.{222}{201}{1-136}{230}
+
+Bin 6
+RVF_UG_NP_Correct
+.{222}{205}{1-136}{240}
+
+Bin 7
+RVF_G_VP_Correct
+.{222}{202}{1-136}{230}
+
+Bin 8
+RVF_UG_VP_Correct
+.{222}{206}{1-136}{240}
