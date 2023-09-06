@@ -1,6 +1,77 @@
+# Software Installation: Python 3.11 and MNE
+Python installation depends on your OS (operating system). For mac users, jump to [this section](#macos).
+## Windows
+### Check for installed Pythons
+In the Windows start menu search bar, type `Python` to see which versions you have installed. If it's already 3.11, skip to section [Python packages via PIP](#python-packages-via-pip); if not, read on to install Python 3.11
+
+### Python 3.11 official installer
+Go the the [official Python website](https://www.python.org/downloads/release/python-3115/). Select "Windows installer 64-bit" (if an error occurs and the installation fails, your devic is on a 32-bit processor, so switch to "Windows installer 32-bit"). After the installer file has been downloaded, double-click on the file to run it. In the pop out window, check off ☑️ "Install launcher for all users (recommended)" and ☑️ "Add Python 3.11 to PATH", then click "Install Now".
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot3.png" alt="Python Intsaller for Windows" width="300">
+
+Open your PowerShell, type
+```
+py --list
+```
+to show all the Python versions you have installed (and have been added to PATH). You should at least see 3.11.
+- 💡To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X, then click "Windows PowerShell" (you don't need to run as the administrator, though).
+
+### Python packages via PIP
+In the PowerShell, type
+```
+py -3.11 -m pip list
+```
+to see all the packages installed by PIP. If your Python 3.11 has just been installed, you'll only see `pip` itself and `setuptools`. In the following steps, we'll install a package called `virtualenv` to create a virtual environment:
+```
+py -3.11 -m pip install virtualenv
+```
+After installation, create a new folder called `erpclass`, go to that folder, and create a virtual environment named `venv`. Execute the commands below one line at a time:
+```
+mkdir erpclass; cd erpclass
+py -3.11 -m virtualenv venv
+venv\Scripts\activate
+pip install jupyterlab mne pandas pingouin openpyxl flake8
+```
+- **[MNE](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
+- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis amd manipulations in the form of `pandas.DataFrame`
+- [Pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
+- [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
+    + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
+- [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+
+After it's done, type `py -3.11 -m pip list` again. You should now see a long list of packages installed.
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
+
+## Opening Jupyter Lab
+No we're ready to open your Jupyter Lab! Type
+```
+jupyter-lab
+```
+which will automatically open a browser tab (if it doesn't, copy and paste any one of the URLs, e.g., `http:/localhost:blahblahblah` into your browser search bar), and voila! There's your Jupyter Lab! Note also that you do not need the internet to run Jupyter; localhost refers to your device. 
+
+Last step, open a Jupyter notebook and paste the following lines into the first cell, then hit Run:
+```
+import mne
+import numpy as np
+from platform import python_version
+python_version()
+```
+
+### Deactivating virtual environments
+To deactivate a virtual environment, simply type
+```
+deactivate
+```
+in the terminal. In addition, if you now type
+```
+pip3 list
+```
+after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
+
+
 ## macOS
 ### Pre-installed Python
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
+- 💡 To open the mac terminal, click on the Launchpad icon in the Dock, type `Terminal` in the search field, then click Terminal.
 
 ### Install Xcode Command Line Tools
 Check if they're installed:
@@ -127,4 +198,4 @@ in the terminal. In addition, if you now type
 ```
 pip3 list
 ```
-after `venv` has been deactivated, you won't see any of the packages we just installed.
+after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
