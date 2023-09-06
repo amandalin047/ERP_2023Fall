@@ -49,7 +49,7 @@ After installation, run
 pyenv init
 ```
 and look at the terminal output carefully; follow the instruction there, i.e.,  copy and paste the listed lines to your corresponding files, which in my case are `~/.bashrc` and `~/.profile` as I'm running Ubuntu in Windows Subsystem for Linux. Remember to save, then _source_ the files or _close and restart_ your terminal for the changes to take effect. 
-- 💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and email the picture to me.
+- 💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and [email me](https://docs.google.com/document/d/1JBO6eFAZ6MM8P9p1YiCILFfPHe5p0GV_/edit?usp=sharing&ouid=103533581234587701878&rtpof=true&sd=true) the picture.
 
 ## Python via `pyenv`
 Now install Python 3.11.5 using pyenv (this may take a while):
