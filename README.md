@@ -14,7 +14,7 @@ Open your PowerShell, type
 py --list
 ```
 to show all the Python versions you have installed (and have been added to PATH). You should at least see 3.11.
-- 💡 To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X, then click "Windows PowerShell" (you don't need to run as the administrator, though).
+- 💡 To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X.
 
 ### Python packages via PIP
 In the PowerShell, type
@@ -38,7 +38,7 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
-- ⚠️ In the third line, if you encounter an error related to security policiescopen a new PowerShell and **run as the administrator**. Type
+- ⚠️ In the third line, if you encounter an error related to security policies, open a new PowerShell and **run as the administrator**. Type
 ```
 Set-ExecutionPolicy Unrestricted
 ```
