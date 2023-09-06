@@ -82,6 +82,7 @@ deactivate
 ### Pre-installed Python
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
 - 💡 To open the mac terminal, click on the Launchpad icon in the Dock, type `Terminal` in the search field, then click Terminal.
+- 💡 Apple installs Python in `usr/bin/`, so don't touch anything related to Python in that directory!!!
 
 ### Install Xcode Command Line Tools
 Check if they're installed:
