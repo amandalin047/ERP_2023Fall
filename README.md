@@ -1,5 +1,11 @@
 # Software Installation: Python 3.11 and MNE
-Python installation depends on your OS (operating system). For mac users, jump to [this section](#macos).
+Python installation depends on your OS (operating system). As there's quite a bit of shell language involved in the set-up, here I also introduce a web-based alternative, _Google Colab_, which should be sufficient for tye purposes of incorporating Python into this course. That being said,trying out the installation is still strongly recommended.
+
+Sections:
+- [Windows](#windows)
+- [MacOS](#macos)
+- [Google Colab](#google-colab)
+
 ## Windows
 ### Check for installed Pythons
 In the Windows start menu search bar, type `Python` to see which versions you have installed. If it's already 3.11, skip to section [Python packages via PIP](#python-packages-via-pip); if not, read on to install Python 3.11
@@ -210,3 +216,5 @@ in the terminal. In addition, if you now type
 pip3 list
 ```
 after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
+
+## Google Colab
