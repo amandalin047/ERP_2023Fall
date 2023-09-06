@@ -195,7 +195,7 @@ pip3 install jupyterlab mne pandas pingouin openpyxl flake8
 
 After it's done, type `pip3 list` again. You should now see a long list of packages installed.
 
-## Opening Jupyter Lab
+### Opening Jupyter Lab
 No we're ready to open your Jupyter Lab! Type
 ```
 jupyter lab
