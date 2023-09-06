@@ -93,7 +93,7 @@ source venv/bin/activate
 pip3 install jupyterlab mne pandas pingouin openpyxl flake8
 ```
 - **[MNE](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
-- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis amd manipulations in the form of `Pandas.DataFrame`
+- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis amd manipulations in the form of `pandas.DataFrame`
 - [Pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     ++ Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
