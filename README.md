@@ -14,7 +14,7 @@ Open your PowerShell, type
 py --list
 ```
 to show all the Python versions you have installed (and have been added to PATH). You should at least see 3.11.
-- 💡To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X, then click "Windows PowerShell" (you don't need to run as the administrator, though).
+- 💡 To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X, then click "Windows PowerShell" (you don't need to run as the administrator, though).
 
 ### Python packages via PIP
 In the PowerShell, type
