@@ -174,7 +174,7 @@ Now type
 ```
 pip3 list
 ```
-to see the packages installed by pip, which in this case are probably just `pip` itself and `setuptools`. We want to install a package called `virtualenv` to create a virtual environment as mentioned in the beginning, so run
+to see the packages installed by PIP, which in this case are probably just `pip` itself and `setuptools`. We want to install a package called `virtualenv` to create a virtual environment as mentioned in the beginning, so run
 ```
 pip3 install virtualenv
 ```
