@@ -38,8 +38,22 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+- ⚠️ In the third line, if you encounter an error related to security policiescopen a new PowerShell and **run as the administrator**. Type
+```
+Set-ExecutionPolicy Unrestricted
+```
+then type
+```
+cd C:\Users\<your_user_name>\erpclass; venv\Scripts\activate
+```
+(change `<your_user_name>` to your actual device user name)
+to see if the error gets resolved. If so, proceed to the fourth line
+```
+pip install jupyterlab mne pandas pingouin openpyxl flake8
+```
+- ⚠️ In the fourth line, if `pip` doesn't work, perhaps try `py -m pip`.
 
-After it's done, type `py -3.11 -m pip list` again. You should now see a long list of packages installed.
+After it's done, type `pip list` (or `py -m pip list`) again. You should now see a long list of packages installed.
 
 <img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
 
