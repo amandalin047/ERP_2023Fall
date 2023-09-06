@@ -66,7 +66,7 @@ After it's done, type `pip list` (or `py -m pip list`) again. You should now see
 
 <img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
 
-## Opening Jupyter Lab
+### Opening Jupyter Lab
 No we're ready to open your Jupyter Lab! Type
 ```
 jupyter-lab
@@ -80,6 +80,7 @@ import numpy as np
 from platform import python_version
 python_version()
 ```
+There should be no errors, and 3.11.5 will be the output.
 
 ### Deactivating virtual environments
 To deactivate a virtual environment, simply type
@@ -209,6 +210,7 @@ import numpy as np
 from platform import python_version
 python_version()
 ```
+There should be no errors, and 3.11.5 will be the output.
 
 ### Deactivating virtual environments
 To deactivate a virtual environment, simply type
