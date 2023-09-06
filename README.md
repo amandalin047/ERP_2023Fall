@@ -93,6 +93,22 @@ Since most macOS computers come with Python pre-installed (please do not modify 
 - 💡 To open the mac terminal, click on the Launchpad icon in the Dock, type `Terminal` in the search field, then click Terminal.
 - 💡 Apple installs Python in `usr/bin/`, so don't touch anything related to Python in that directory!!!
 
+### Install Homebrew
+In the terminal, type
+```
+brew help
+```
+to see if Homebrew is installed on your mac. If an error occurs, it is not installed. Type the following command to install Homebrew:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+After installation, type
+```
+brew doctor
+```
+to check that everything's okay.
+- 💡 For an alternative way to install with less terminal code involved, please refer to [this page]().
+
 ### Install Xcode Command Line Tools
 Check if they're installed:
 ```
@@ -111,21 +127,6 @@ xcode-select -p
 ```
 in the terminal, which should output
 > /Library/Developer/CommandLineTools
-
-### Install Homebrew
-In the terminal, type
-```
-brew help
-```
-to see if Homebrew is installed on your mac. If an error occurs, it is not installed. Type the following command to install Homebrew:
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-After installation, type
-```
-brew doctor
-```
-to check that everything's okay.
 
 ### Install `pyenv` via Homebrew 
 
