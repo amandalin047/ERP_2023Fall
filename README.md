@@ -4,16 +4,19 @@ Since most macOS computers come with Python pre-installed (please do not modify 
 
 ## Install Xcode Command Line Tools
 Check if they're installed:
-```xcode-select --version
+```
+xcode-select --version
 ```
 If they are, you'll get the corresponding version in your terminal output; if not, run
-```xcode-select --install
+```
+xcode-select --install
 ```
 which will pop out a window asking you to install them. Click Install, and wait. You will then see a message display
 > The software was installed.
 
 Click Done, and type 
-```xcode-select -p
+```
+xcode-select -p
 ```
 in the terminal, which should output
 > /Library/Developer/CommandLineTools
@@ -46,7 +49,7 @@ After installation, run
 pyenv init
 ```
 and look at the terminal output carefully; follow the instruction there, i.e.,  copy and paste the listed lines to your corresponding files, which in my case are `~/.bashrc` and `~/.profile` as I'm running Ubuntu in Windows Subsystem for Linux. Remember to save, then _source_ the files or _close and restart_ your terminal for the changes to take effect. 
-💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and email the picture to me.
+- 💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and email the picture to me.
 
 ## Python via `pyenv`
 Now install Python 3.11.5 using pyenv (this may take a while):
