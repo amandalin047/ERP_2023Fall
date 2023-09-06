@@ -1,8 +1,8 @@
-# macOS
-## Pre-installed Python
+## macOS
+### Pre-installed Python
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
 
-## Install Xcode Command Line Tools
+### Install Xcode Command Line Tools
 Check if they're installed:
 ```
 xcode-select --version
@@ -21,7 +21,7 @@ xcode-select -p
 in the terminal, which should output
 > /Library/Developer/CommandLineTools
 
-## Install Homebrew
+### Install Homebrew
 In the terminal, type
 ```
 brew help
@@ -36,7 +36,7 @@ brew doctor
 ```
 to check that everything's okay.
 
-## Install `pyenv` via Homebrew 
+### Install `pyenv` via Homebrew 
 
 After Homebrew has been installed, run the following lines **one line at a time** in the terminal to install Python 3.11.5 and the packages we'll be using in class, along with several others I find useful for data analysis:
 ```
@@ -77,7 +77,7 @@ python --version
 ```
 should get you the desired 3.11.5
 
-## Python packages via PIP
+### Python packages via PIP
 Now type
 ```
 pip3 list
@@ -118,7 +118,7 @@ from platform import python_version
 python_version()
 ```
 
-## Deactivating virtual environments
+### Deactivating virtual environments
 To deactivate a virtual environment, simply type
 ```
 deactivate
