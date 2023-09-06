@@ -77,12 +77,6 @@ To deactivate a virtual environment, simply type
 ```
 deactivate
 ```
-in the terminal. In addition, if you now type
-```
-pip3 list
-```
-after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
-
 
 ## macOS
 ### Pre-installed Python
