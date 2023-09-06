@@ -1,8 +1,16 @@
 # macOS
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version`, which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
 
+Install Xcode Command Line Tools: `xcode-select --install`, which will pop out a window asking you to install them. Click Install, and wait. You will then see a message display
+> The software was installed.
+
+Click Done, and type `xcode-select -p` in the terminal, which should output
+```
+/Library/Developer/CommandLineTools
+```
+
 Type `brew help` in the terminal to see if Homebrew is installed on your mac. If an error occurs, it is not installed. Type the following command to install Homebrew:
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`. After installation, type `brew doctor` to check that everything's okay.
 
 After Homebrew has been installed, run the following lines **one line at a time** in the terminal to install Python 3.11.5 and the packages we'll be using in class (well, we probably won't need Pandas, but I figured it's an essential package for data analysis, so I've included that also):
 ```
