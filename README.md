@@ -6,6 +6,7 @@ In the Windows start menu search bar, type `Python` to see which versions you ha
 
 ### Python 3.11 official installer
 Go the the [official Python website](https://www.python.org/downloads/release/python-3115/). Select "Windows installer 64-bit" (if an error occurs and the installation fails, your devic is on a 32-bit processor, so switch to "Windows installer 32-bit"). After the installer file has been downloaded, double-click on the file to run it. In the pop out window, check off ☑️ "Install launcher for all users (recommended)" and ☑️ "Add Python 3.11 to PATH", then click "Install Now".
+
 <img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot3.png" alt="Python Intsaller for Windows" width="300">
 
 Open your PowerShell, type
@@ -39,6 +40,7 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
 After it's done, type `py -3.11 -m pip list` again. You should now see a long list of packages installed.
+
 <img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
 
 ## Opening Jupyter Lab
