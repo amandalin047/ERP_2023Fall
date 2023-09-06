@@ -1,7 +1,8 @@
 # macOS
-Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version`, which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
+Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
 
-Install Xcode Command Line Tools: `xcode-select --install`, which will pop out a window asking you to install them. Click Install, and wait. You will then see a message display
+Install Xcode Command Line Tools: Check if they're installed: `xcode-select --version`. If they are, you'll get the corresponding version in your terminal output; if not, run
+`xcode-select --install` which will pop out a window asking you to install them. Click Install, and wait. You will then see a message display
 > The software was installed.
 
 Click Done, and type `xcode-select -p` in the terminal, which should output
