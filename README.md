@@ -1,9 +1,12 @@
 # Software Installation: Python 3.11 and MNE
-Python installation depends on your OS (operating system). As there's quite a bit of shell language involved in the set-up, here I also introduce a web-based alternative, _Google Colab_, which should be sufficient for tye purposes of incorporating Python into this course. That being said,trying out the installation is still strongly recommended.
+Python installation depends on your OS (operating system). As there's quite a bit of shell language involved in the set-up, here I also introduce two alternatives:
+- A user-friendly Python and R distribution and package manager, Anaconda. 
+- A web-based alternative, _Google Colab_, which should be sufficient for tye purposes of incorporating Python into this course. That being said,trying out the installation is still strongly recommended.
 
 Sections:
 - [Windows](#windows)
 - [MacOS](#macos)
+- [Anaconda](#anaconda)
 - [Google Colab](#google-colab)
 
 ## Windows
@@ -216,5 +219,7 @@ in the terminal. In addition, if you now type
 pip3 list
 ```
 after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
+
+## Anaconda
 
 ## Google Colab
