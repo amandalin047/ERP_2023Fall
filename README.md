@@ -96,7 +96,7 @@ pip3 install jupyterlab mne pandas pingouin openpyxl flake8
 - [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis amd manipulations in the form of `pandas.DataFrame`
 - [Pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
-    ++ Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
+    + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
 After it's done, type `pip3 list` again. You should now see a long list of packages installed.
