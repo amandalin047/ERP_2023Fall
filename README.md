@@ -108,7 +108,7 @@ After installation, type
 brew doctor
 ```
 to check that everything's okay.
-- 💡 For an alternative way to install Python with less terminal code involved, please refer to [this page]().
+- 💡 For an alternative way to install Python with less terminal code involved, please refer to [this page](https://github.com/NTU-BLPLab/ERP_2023Fall/tree/installation).
 
 ### Install Xcode Command Line Tools
 Check if they're installed:
