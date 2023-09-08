@@ -251,7 +251,7 @@ If your Anaconda unfortunately gets forever stuck at package installation, hit "
 ```
 !pip install mne pandas pingouin openpyxl flake8
 
-from IPython.display import clear_ouput
+from IPython.display import clear_output
 clear_output()
 
 !pip show mne pandas pingouin openpyxl flake8
