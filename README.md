@@ -18,12 +18,12 @@ Go the the [official Python website](https://www.python.org/downloads/release/py
 
 <img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot1.png" alt="Python Intsaller for Windows" width="300">
 
-Open your PowerShell, type
+Launch your PowerShell, type
 ```
 py --list
 ```
 to show all the Python versions you have installed (and have been added to PATH). You should at least see 3.11.
-- 💡 To open PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X.
+- 💡 To launch PowerShell, type "powershell" in the Windows start menu search bar and click on the PowerShell icon; if you're on Windows 11, press the Windows key and X.
 
 ### Python packages via PIP
 In the PowerShell, type
@@ -47,9 +47,9 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
-- ⚠️ In the third line, if you encounter an error related to security policies, open a new PowerShell and **run as the administrator**. Type
+- ⚠️ In the third line, if you encounter an error related to execution policies, open a new PowerShell and **run as the administrator**. Type
 ```
-Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Unrestricted 
 ```
 then type
 ```
@@ -91,7 +91,7 @@ deactivate
 ## MacOS
 ### Pre-installed Python
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
-- 💡 To open the mac terminal, click on the Launchpad icon in the Dock, type `Terminal` in the search field, then click Terminal.
+- 💡 To launch the mac terminal, click on the Launchpad icon in the Dock, type `Terminal` in the search field, then click Terminal.
 - 💡 Apple installs Python in `usr/bin/`, so don't touch anything related to Python in that directory!!!
 
 ### Install Homebrew
