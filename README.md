@@ -225,12 +225,17 @@ after `venv` has been deactivated, you won't see any of the packages we just ins
 
 ## Anaconda
 ### Intsall Anaconda
-Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
+Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Check off 3 of the 4 boxes as shown in the scrrenshot. Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
+
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot4.png" alt="pyenv init" width=400>
 
 ### Configuring your environment
 After installation, launch Anaconda Navigator. Most likely you'll see a prompt suggesting that you update Anaconda to the latest version. Click update, which will then prompt you to quit Anaconda Navigator. Just click Yes/Next/Continue all the way and relaunch Anaconda Navigator when the update finishes.
 
-On the Anaconda Navigator graphical interface, select "Environments", click on "Create", then type in `venv`. On the right side of the page, click on "Channels", add `conda-forge`. In the drop-down menu, select "Not installed", then search for `jupyterlab` in the top-right search bar, check it off and "Apply".
+On the Anaconda Navigator graphical interface, select "Environments", click on "Create", then type in `venv` and wait for the new virtual environment to be created. On the right side of the page, click on "Channels", add `conda-forge`. In the drop-down menu, select "Not installed", then search for `jupyterlab` in the top-right search bar, check it off and "Apply".
+
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot5.png" alt="pyenv init" width=400>
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot6.png" alt="pyenv init" width=400>
 
 Continue searching for then applying the following packages:
 - **[mne](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
@@ -239,6 +244,8 @@ Continue searching for then applying the following packages:
 - [openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot7.png" alt="pyenv init" width=400>
 
 If your Anaconda gets stuck, select "Home" on the right, launch JupyterLab, which will open a notebook "Untitled1.ipynb". In the first cell, type
 ```
@@ -249,6 +256,9 @@ clear_output()
 
 !pip show mne pandas pingouin openpyxl flake8
 ```
+
+<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot8.png" alt="pyenv init" width=400>
+
 In the next cell, type
 ```
 !mkdir erpclass
