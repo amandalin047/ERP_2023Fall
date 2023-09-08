@@ -16,7 +16,7 @@ In the Windows start menu search bar, type `Python` to see which versions you ha
 ### Python 3.11 official installer
 Go the the [official Python website](https://www.python.org/downloads/release/python-3115/). Select "Windows installer 64-bit" (if an error occurs and the installation fails, your devic is on a 32-bit processor, so switch to "Windows installer 32-bit"). After the installer file has been downloaded, double-click on the file to run it. In the pop out window, check off ☑️ "Install launcher for all users (recommended)" and ☑️ "Add Python 3.11 to PATH", then click "Install Now".
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot1.png" alt="Python Intsaller for Windows" width="300">
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot1.png" alt="Python Intsaller for Windows" width="300">
 
 Open your PowerShell, type
 ```
@@ -64,7 +64,7 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 
 After it's done, type `pip list` (or `py -m pip list`) again. You should now see a long list of packages installed.
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot2.png" alt="Python packes via PIP" width="700">
 
 ### Opening Jupyter Lab
 No we're ready to open your Jupyter Lab! Type
@@ -141,7 +141,7 @@ After installation, run
 ```
 pyenv init
 ```
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot3.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot3.png" alt="pyenv init" width=400>
 
 and look at the terminal output carefully; follow the instruction there, i.e.,  copy and paste the listed lines to your corresponding files, which in my case are `~/.bashrc` and `~/.profile` as I'm running Ubuntu in Windows Subsystem for Linux. Remember to save, then _source_ the files or _close and restart_ your terminal for the changes to take effect. 
 - 💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and [email me](https://docs.google.com/document/d/1JBO6eFAZ6MM8P9p1YiCILFfPHe5p0GV_/edit?usp=sharing&ouid=103533581234587701878&rtpof=true&sd=true) the picture.
@@ -227,15 +227,15 @@ after `venv` has been deactivated, you won't see any of the packages we just ins
 ### Intsall Anaconda
 Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Check off 3 of the 4 boxes as shown in the scrrenshot. Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot4.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot4.png" alt="pyenv init" width=400>
 
 ### Configuring your environment
 After installation, launch Anaconda Navigator. Most likely you'll see a prompt suggesting that you update Anaconda to the latest version. Click update, which will then prompt you to quit Anaconda Navigator. Just click Yes/Next/Continue all the way and relaunch Anaconda Navigator when the update finishes.
 
 On the Anaconda Navigator graphical interface, select "Environments", click on "Create", then type in `venv` and wait for the new virtual environment to be created. On the right side of the page, click on "Channels", add `conda-forge`. In the drop-down menu, select "Not installed", then search for `jupyterlab` in the top-right search bar, check it off and "Apply".
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot5.png" alt="pyenv init" width=400>
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot6.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot5.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot6.png" alt="pyenv init" width=400>
 
 Continue searching for then applying the following packages:
 - **[mne](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
@@ -245,7 +245,7 @@ Continue searching for then applying the following packages:
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot7.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot7.png" alt="pyenv init" width=400>
 
 If your Anaconda gets stuck, select "Home" on the right, launch JupyterLab, which will open a notebook "Untitled1.ipynb". In the first cell, type
 ```
