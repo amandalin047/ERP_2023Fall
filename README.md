@@ -42,9 +42,9 @@ venv\Scripts\activate
 pip install jupyterlab mne pandas pingouin openpyxl flake8
 ```
 - **[MNE](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
-- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and manipulations in the form of `pandas.DataFrame`
-- [Pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
-- [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
+- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and data manipulation in the form of `pandas.DataFrame`
+- [Pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
+- [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 - ⚠️ In the third line, if you encounter an error related to execution policies, launch a new PowerShell window and **run as the administrator**. Type
@@ -188,9 +188,9 @@ source venv/bin/activate
 pip3 install jupyterlab mne pandas pingouin openpyxl flake8
 ```
 - **[MNE](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
-- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and manipulations in the form of `pandas.DataFrame`
-- [Pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
-- [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
+- [Pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and data manipulation in the form of `pandas.DataFrame`
+- [Pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
+- [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
@@ -239,9 +239,9 @@ On the Anaconda Navigator graphical interface, select "Environments", click on "
 
 Continue searching for then applying the following packages:
 - **[mne](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
-- [pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and manipulations in the form of `pandas.DataFrame`
-- [pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
-- [openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
+- [pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis and data manipulation in the form of `pandas.DataFrame`
+- [pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
+- [openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
