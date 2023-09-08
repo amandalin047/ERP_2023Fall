@@ -34,7 +34,7 @@ to see all the packages installed by PIP. If your Python 3.11 has just been inst
 ```
 py -3.11 -m pip install virtualenv
 ```
-After installation, create a new folder called `erpclass`, go to that folder, and create a virtual environment named `venv`. Execute the commands below one line at a time:
+After installation, create a new folder called `erpclass`, go to that folder, create a virtual environment named `venv`, and install relevant packages by executing the commands below one line at a time:
 ```
 mkdir erpclass; cd erpclass
 py -3.11 -m virtualenv venv
@@ -47,7 +47,7 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
 - [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
-- ⚠️ In the third line, if you encounter an error related to execution policies, open a new PowerShell and **run as the administrator**. Type
+- ⚠️ In the third line, if you encounter an error related to execution policies, launch a new PowerShell window and **run as the administrator**. Type
 ```
 Set-ExecutionPolicy Unrestricted 
 ```
@@ -131,7 +131,7 @@ in the terminal, which should output
 
 ### Install `pyenv` via Homebrew 
 
-After Homebrew has been installed, run the following lines **one line at a time** in the terminal to install Python 3.11.5 and the packages we'll be using in class, along with several others I find useful for data analysis:
+After Homebrew has been installed, run the following lines one line at a time in the terminal to install Python 3.11.5 and the packages we'll be using in class, along with several others I find useful for data analysis:
 ```
 brew update && brew upgrade
 brew install pyenv
@@ -180,7 +180,7 @@ to see the packages installed by PIP, which in this case are probably just `pip`
 pip3 install virtualenv
 ```
 
-After installation, create a new folder called `erpclass`, go to that folder, and create a virtual environment named `venv`. Execute the commands below one line at a time:
+After installation, create a new folder called `erpclass`, go to that folder, and create a virtual environment named `venv` by executing the commands below one line at a time:
 ```
 mkdir erpclass; cd erpclass
 virtualenv venv
