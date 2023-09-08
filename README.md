@@ -224,6 +224,36 @@ pip3 list
 after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
 
 ## Anaconda
+### Intsall Anaconda
+Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
+
+### Configuring your environment
+After installation, launch Anaconda Navigator. Most likely you'll see a prompt suggesting that you update Anaconda to the latest version. Click update, which will then prompt you to quit Anaconda Navigator. Just click Yes/Next/Continue all the way and relaunch Anaconda Navigator when the update finishes.
+
+On the Anaconda Navigator graphical interface, select "Environments", click on "Create", then type in `venv`. On the right side of the page, click on "Channels", add `conda-forge`. In the drop-down menu, select "Not installed", then search for `jupyterlab` in the top-right search bar, check it off and "Apply".
+
+Continue searching for then applying the following packages:
+- **[mne](https://mne.tools/stable/index.html) is the Python package for reading, processing, analyzing, and plotting EEG/MEG data.**
+- [pandas](https://pandas.pydata.org/docs/) is a powerful library for data analysis amd manipulations in the form of `pandas.DataFrame`
+- [pingouin](https://pingouin-stats.org/build/html/index.html) is for for statistical analyses in Python (I find it more convenient tyan Statsmodels, which comes installed as a dependency with MNE.
+- [openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and qrite to Excel files.
+    + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
+- [flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+
+If your Anaconda gets stuck, select "Home" on the right, launch JupyterLab, which will open a notebook "Untitled1.ipynb". In the first cell, type
+```
+!pip install mne pandas pingouin openpyxl flake8
+
+from IPython.display import clear_ouput
+clear_output()
+
+!pip show mne pandas pingouin openpyxl flake8
+```
+In the next cell, type
+```
+!mkdir erpclass
+```
+to create a folder for this class. Now you're all set :)
 
 ## Google Colab
 Google Colab provides free access to IPython notebooks, which can be saved and shared as do any other Google documents. To open a new Colab notebook, log into your Google account, then visit [this link](https://colab.research.google.com). Click on "NEW PYTHON 3 NOTEBOOK" in blue at the bottom right. 
