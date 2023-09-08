@@ -225,7 +225,7 @@ after `venv` has been deactivated, you won't see any of the packages we just ins
 
 ## Anaconda
 ### Intsall Anaconda
-Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Check off 3 of the 4 boxes as shown in the scrrenshot. Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
+Go to the [official Anaconda website](https://www.anaconda.com/download#downloads) and download the _Graphical Installer_ for your OS. This may take a while... Check off 3 of the 4 boxes as shown in the screenshot. Also, _make sure that there's no existing Python 3.11 on your device_ (you'll see a warning pop-up if this is the case).
 
 <img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot4.png" alt="pyenv init" width=400>
 
