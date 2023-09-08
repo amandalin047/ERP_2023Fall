@@ -1,7 +1,7 @@
 # Software Installation: Python 3.11 and MNE
 Python installation depends on your OS (operating system). As there's quite a bit of shell language involved in the set-up, here I also introduce two alternatives:
 - A user-friendly Python and R distribution plus package manager, _Anaconda_. 
-- A cloud-based alternative, _Google Colab_, which should be sufficient for tye purposes of incorporating Python into this course. That being said,trying out the installation is still strongly recommended.
+- A cloud-based alternative, _Google Colab_, which should be sufficient for the purposes of this course. That being said, configuring your own Python environment is still encouraged.
 
 Sections:
 - [Windows](#windows)
