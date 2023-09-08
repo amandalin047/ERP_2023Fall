@@ -247,7 +247,7 @@ Continue searching for then applying the following packages:
 
 <img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot7.png" alt="pyenv init" width=400>
 
-If your Anaconda gets stuck, select "Home" on the right, launch JupyterLab, which will open a notebook "Untitled1.ipynb". In the first cell, type
+If your Anaconda gets stuck on package installation, hit "Cancel". Select "Home" on the right, launch JupyterLab, which will open a notebook "Untitled1.ipynb". In the first cell, type
 ```
 !pip install mne pandas pingouin openpyxl flake8
 
