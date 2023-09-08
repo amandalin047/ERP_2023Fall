@@ -46,7 +46,7 @@ pip install jupyterlab mne pandas pingouin openpyxl flake8
 - [Pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
-- [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+- [Flake8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 - ⚠️ In the third line, if you encounter an error related to execution policies, launch a new PowerShell window and **run as the administrator**. Type
 ```
 Set-ExecutionPolicy Unrestricted 
@@ -192,7 +192,7 @@ pip3 install jupyterlab mne pandas pingouin openpyxl flake8
 - [Pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
 - [Openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
-- [Flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+- [Flake8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
 After it's done, type `pip3 list` again. You should now see a long list of packages installed.
 
@@ -243,7 +243,7 @@ Continue searching for then applying the following packages:
 - [pingouin](https://pingouin-stats.org/build/html/index.html) is for statistical analyses in Python (I find it more convenient than Statsmodels, which comes installed as a dependency with MNE.
 - [openpyxl](https://openpyxl.readthedocs.io/en/stable/) is needed in order for Python to read from and write to Excel files.
     + Side note: Excel now accepts (or is about to accept) Python syntax and functions 😍
-- [flak8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
+- [flake8](https://flake8.pycqa.org/en/latest/) is basically Grammerly for Python.
 
 <img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot7.png" alt="pyenv init" width=400>
 
