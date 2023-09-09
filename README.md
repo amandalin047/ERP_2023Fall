@@ -257,7 +257,7 @@ clear_output()
 !pip show mne pandas pingouin openpyxl flake8
 ```
 
-<img src="https://github.com/NTU-BLPLab/ERP_2023Fall/blob/installation/screenshots/screenshot8.png" alt="pyenv init" width=400>
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot8.png" alt="pyenv init" width=400>
 
 In the next cell, type
 ```
