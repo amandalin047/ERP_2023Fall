@@ -73,7 +73,7 @@ jupyter-lab
 ```
 which will automatically open a browser tab (if it doesn't, copy and paste any one of the URLs, e.g., `http:/localhost:blahblahblah` into your browser search bar), and voila! There's your Jupyter Lab! Note also that you do not need the internet to run Jupyter; localhost refers to your device. 
 
-Last step, open a Jupyter notebook and paste the following lines into the first cell, then hit Run:
+Last step, open a Jupyter notebook (in the Launcher, select "Pytnon 3 ipython kernel") and paste the following lines into the first cell, then hit Run:
 ```
 import mne
 import numpy as np
@@ -81,6 +81,8 @@ from platform import python_version
 python_version()
 ```
 There should be no errors, and 3.11.5 will be the output.
+
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot9.png" alt="pyenv init" width=400>
 
 ### Deactivating virtual environments
 To deactivate a virtual environment, simply type
@@ -211,7 +213,7 @@ jupyter lab
 ```
 which will automatically open a browser tab (if it doesn't, copy and paste any one of the URLs, e.g., `http:/localhost:blahblahblah` into your browser search bar), and voila! There's your Jupyter Lab! Note also that you do not need the internet to run Jupyter; localhost refers to your device. 
 
-Last step, open a Jupyter notebook and paste the following lines into the first cell, then hit Run:
+Last step, open a Jupyter notebook (in the Launcher, select "Python 3 ipython kernel") and paste the following lines into the first cell, then hit Run:
 ```
 import mne
 import numpy as np
@@ -219,6 +221,8 @@ from platform import python_version
 python_version()
 ```
 There should be no errors, and 3.11.5 will be the output.
+
+<img src="https://github.com/amandalin047/ERP_2023Fall/blob/installation/screenshots/screenshot9.png" alt="pyenv init" width=400>
 
 ### Deactivating virtual environments
 To deactivate a virtual environment, simply type
