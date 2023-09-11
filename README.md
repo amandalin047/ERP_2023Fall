@@ -88,6 +88,14 @@ To deactivate a virtual environment, simply type
 deactivate
 ```
 
+### Final note
+Suppose you've closed your terminal and wish to relaunch it, you have to go to the `erpclass` folder and _activate_ `venv`, after which you may then launch Jupyter:
+```
+cd erpclass
+venv/Scripts/activate
+jupyter lab
+```
+
 ## MacOS
 ### Pre-installed Python
 Since most macOS computers come with Python pre-installed (please do not modify your mac's pre-installed Python as it would mess with your system), it's always a good practice to check which Python version you have on your device. Go to your terminal and type `python --version` which probably isn't 3.11.5. The steps below will install the latest Python release and a virtual environment for better package version/dependency management.
@@ -222,6 +230,14 @@ in the terminal. In addition, if you now type
 pip3 list
 ```
 after `venv` has been deactivated, you won't see any of the packages we just installed after `virtualenv`.
+
+### Final note
+Suppose you've closed your terminal and wish to relaunch it, you have to go to the `erpclass` folder and _activate_ `venv`, after which you may launch Jupyter:
+```
+cd erpclass
+source venv/bin/activate
+jupyter lab
+```
 
 ## Anaconda
 ### Intsall Anaconda
