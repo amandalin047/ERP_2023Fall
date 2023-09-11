@@ -116,7 +116,7 @@ in the terminal, which should output
 ### Install Homebrew
 In the terminal, type
 ```
-brew help
+brew --version 
 ```
 to see if Homebrew is installed on your mac. If an error occurs, it is not installed. Type the following command to install Homebrew:
 ```
