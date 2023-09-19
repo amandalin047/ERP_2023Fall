@@ -157,6 +157,10 @@ and look at the terminal output carefully; follow the instruction there, i.e., 
 - 💡 If you've never modified such files and are lost at this step, feel free to screenshot what `pyenv init` outputs and [email me](https://docs.google.com/document/d/1JBO6eFAZ6MM8P9p1YiCILFfPHe5p0GV_/edit?usp=sharing&ouid=103533581234587701878&rtpof=true&sd=true) the picture.
 
 ## Python via `pyenv`
+It's recommended to install build depedndencies before installing any Python version, so execute the following:
+```
+brew install openssl readline sqlite3 xz zlib tcl-tk
+```
 Now install Python 3.11.5 using pyenv (this may take a while):
 ```
 pyenv install 3.11.5
