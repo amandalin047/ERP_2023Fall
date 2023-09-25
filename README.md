@@ -290,6 +290,6 @@ In the next cell, type
 to create a folder for this class. Now you're all set :)
 
 ## Google Colab
-Google Colab provides free access to IPython notebooks, which can be saved and shared as do any other Google documents. To open a new Colab notebook, log into your Google account, then visit [this link](https://colab.research.google.com). Click on "NEW PYTHON 3 NOTEBOOK" in blue at the bottom right. 
+Google Colab provides free access to IPython notebooks, which can be saved and shared as can any other Google documents. To open a new Colab notebook, log into your Google account, then visit [this link](https://colab.research.google.com). Click on "NEW PYTHON 3 NOTEBOOK" in blue at the bottom right. 
 
 Since the current Python version Colab runs on is 3.10.12, and the package MNE for EEG/ERP data analysis does not come pre-installed, make a copy of [this notebook](https://colab.research.google.com/drive/1M2faNCjkbcLnRuhkxoo7a2euuvZAuMhh) to your Google account to configure your Colab environment.
