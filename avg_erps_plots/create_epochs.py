@@ -4,9 +4,7 @@ import copy
 from re import findall
 
 def parse_bdf(BDF_txt):
-    '''Do not include spaces in the bin names, e.g., LVF Grammatical Correct, for it will cause parsing errors - am working on it.
-       Bin sizes should be in descending order: if Bin j ⊂ Bin i, then j > i 
-    '''
+    '''Bin sizes should be in descending order: if Bin j ⊂ Bin i, then j > i '''
     f1 = open(BDF_txt, encoding='utf-8')
     f2 = f1.read().split()
     f1.close()
