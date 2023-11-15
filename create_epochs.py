@@ -1,11 +1,21 @@
 import mne
 import numpy as np
 import matplotlib.pyplot as plt
-import copy
+from copy import deepcopy
 from re import findall
 
 def parse_bdf(BDF_txt):
-    '''Bin sizes should be in descending order: if Bin j ⊂ Bin i, then j > i '''
+    '''Bin sizes should be in descending order: if Bin j ⊂ Bin i, then j > i (this is due to how an EventList is parsed in my algorithm).
+    
+       This epoching algorithm in Python only works when all the bins are either mutually exclusive or completely inclusive, i.e., 
+       Let A, B be any two bins (A ≠ B), then their relationship must be one of the three:
+           A ⊂ B
+           B ⊂ A
+           A ∩ B = ø
+
+       If there are two non mutually exclusive bins where their intersection is non-empty, the algorithm will fail because in this case,
+       it's impossible to correctly capture all the bins in one single mne.Epochs object; multiple instances of mne.Epochs would be needed as MNE only supports
+       hierarchical bin structures. This MNE constraint probably has to do with Python dictionaries where one key can only be mapped to one value'''
     f1 = open(BDF_txt, encoding='utf-8')
     f2 = f1.read().split()
     f1.close()
@@ -47,11 +57,11 @@ def epoching(eeglab_raw, eeglab_epochs, BDF_txt, elist_txt, tmin):
     new_annot = mne.Annotations(np.array(items['onset'], dtype=object),
                             np.array(items['duration'], dtype=object),
                             np.array(items['description'], dtype=object), orig_time=None, ch_names=None)
-    raw = eeglab_raw.copy().set_annotations(new_annot)
+    raw = deepcopy(eeglab_raw).set_annotations(new_annot)
 
     events, event_id = mne.events_from_annotations(raw)
     
-    old_event_id = copy.deepcopy(event_id)
+    old_event_id = deepcopy(event_id)
     event_id = {}
     for v in bins.values():
         try:
