@@ -1,5 +1,5 @@
 # HW3 Python Version Tutorial
-- Clone the repo and re-reference _S1_elist_H3bins_be.set_ in EEGLAB (sorry, my MATLAB does not generate FDTs):
+- Clone the repo and re-reference **S1_elist_HW3bins_be.set** in EEGLAB (my MATLAB does not generate FDTs):
   
   ```
   $ cd erpclass
