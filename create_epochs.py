@@ -1,5 +1,6 @@
 import mne
 import numpy as np
+# Matplotlib not used in this script (yet). Imported it because I wanted to wrap the plotting code into one single function in this script
 import matplotlib.pyplot as plt
 from copy import deepcopy
 from re import findall
