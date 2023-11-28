@@ -30,7 +30,7 @@ $$10log(0.5) ≈ 10 × (-0.3) = -3\text{ dB}$$
 
 To get "half amplitude" is equivalent to getting "a quarter power" (since $0.5 × 0.5 = 0.25$), so half amplitude corresponds to
 
-$$10log(0.25) ≈ 10×(-0.6) = -6\text{ dB}$
+$$10log(0.25) ≈ 10×(-0.6) = -6\text{ dB}$$
 
 ## Filter Roll-offs
 About the three measures of _roll-off_ you see in the `ERPLAB > Filter & Frequency tools` GUI, please note that the relation between $dB/octave$ and $dB/decade$ always holds true mathematically, but their relation with order is only so because we're implementing the IIR Butterworth filter.
