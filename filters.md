@@ -35,7 +35,7 @@ $$10log(0.25) ≈ 10×(-0.6) = -6\text{ dB}$$
 ## Filter Roll-offs
 About the three measures of _roll-off_ you see in the `ERPLAB > Filter & Frequency tools` GUI, please note that the relation between $dB/octave$ and $dB/decade$ always holds true mathematically, but their relation with order is only so because we're implementing the IIR Butterworth filter.
 
-The key to converting $dB/octave$ to $dB/decade$ (or vice versa) is understanding that one octave means doubling, whereas one decade means multiplying by $10$, and that roll-off in dB/octave means "the power ratio to some reference power when the frequency doubles" (or, in plain English, "how many times greater does the power become relative to some reference power value when the frequency becomes twice as high"). Below we convert $6\text{ }dB/octave$ to its $dB/decade$ equivalent:
+The key to converting $dB/octave$ to $dB/decade$ (or vice versa) is understanding that one octave means doubling, whereas one decade means multiplying by $10$, and that roll-off in $dB/octave$ means "the power ratio to some reference power when the frequency doubles" (or, in plain English, "how many times greater does the power become relative to some reference power value when the frequency becomes twice as high"). Below we convert $6\text{ }dB/octave$ to its $dB/decade$ equivalent:
 
 $6\text{ dB/octave}$
 
