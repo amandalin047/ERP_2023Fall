@@ -52,6 +52,11 @@ $$6\text{ dB/octave} ≈ 20\text{ dB/decade}$$
 
 As for order, just accept that with an IIR Butterworth filter, $n-th$ order corresponds to a $6n\text{ dB/octave}$ roll-off for now as we'll need a better understanding of impulse response functions and frequency response functions (transfer functions) — read on!
 
+## Impulse Response Functions
+There are different types of filters: _causal_ vs _non-causal_, _finite impulse response (FIR)_ vs _infinite impulse response (IIR)_, etc.
 
+_Causal_ refers to when the filter is only determined by signals at the present time and at time points in the past. Online filters on causal since future signals are unknown. ERPLAB offline filters are _non-causal_, for — according to Luck — such filters are less likely to cause "phase shifts" (I'm not sure why exactly).
+
+An _impulse response function_ refers to the signals in response to an impulse (Dirac Delta function). What's meant by _finite_ is that the response function has a finite length in time, whereas _infinite_ refers to when the response function lasts an infinitely long duration. One key difference between FIR and IIR is that IIR has a feedback mechanism. The rest of this section focuses on causal FIR filters (because that's the one I understand better).
 
 
