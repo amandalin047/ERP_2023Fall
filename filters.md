@@ -59,4 +59,29 @@ _Causal_ refers to when the filter is only determined by signals at the present 
 
 An _impulse response function_ refers to the signals in response to an impulse (Dirac Delta function). What's meant by _finite_ is that the response function has a finite length in time, whereas _infinite_ refers to when the response function lasts an infinitely long duration. One key difference between FIR and IIR is that IIR has a feedback mechanism. The rest of this section focuses on causal FIR filters (because that's the one I understand better).
 
+Let $x[n]$ denote the input signal at the $n$-th discrete time point, and $y[n]$ the output, then a causal finite impulse response filter of order N is expressed as
+
+$$y[n] = b_{0}x[n] + b_{1}x[n-1] +\text{ ... }b_{N}x[n-N]$$
+
+where $b_{i}$ are weight coefficients. This means that the output signal $y[n]$ at time $n$ is determined by the present input and past input from $N-1$ time points. Here $N$ is called the _order_ of the finite response.
+
+The _impulse response function_ $h[n]$, then, can be expressed as
+
+$$h[n] = \sum_{i=0}^{N} b_{i}\delta[n-i]$$
+
+where $\delta[n]$ is the Dirac Delta function with value $1$ at time $n$ and value $0$ everywhere else. Note also that the Dirac Delta function has this nice property
+
+$$f(t) = \sum_{i=-\infty}^{\infty}f(i)\delta(t-i)$$
+
+As such, we can express the output signal $y[n]$ in terms of _discrete convolution_
+
+$$
+y[n] = \sum_{i=0}^{N} b_{i}x[n-i]\\
+     = \sum_{i=0}^{N} b_{i}\sum_{j=-\infty}^{\infty}x[j]\delta[n-i-j]\\ 
+     = \sum_{i=0}^{N}\sum_{j=-\infty}^{\infty}b_{i}\delta[n-i-j]x[j]\\
+     = \sum_{j=-\infty}^{\infty}x[j] \sum_{i=0}^{N} b_{i}\delta[n-j-i]\\ 
+     = \sum_{j=-\infty}^{\infty}x[j] h[n-j]\\
+     = (x*h)[n]
+$$
+
 
