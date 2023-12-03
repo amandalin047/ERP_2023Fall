@@ -77,11 +77,11 @@ As such, we can express the output signal $y[n]$ in terms of _discrete convoluti
 
 $$
 \begin{aligned}
-y[n] &= \sum_{i=0}^{N} b_{i}x[n-i] \\
-     &= \sum_{i=0}^{N} b_{i}\sum_{j=-\infty}^{\infty}x[j]\delta[n-i-j] \\
+y[n] &= \sum_{i=0}^{N}b_{i}x[n-i] \\
+     &= \sum_{i=0}^{N}b_{i}\sum_{j=-\infty}^{\infty}x[j]\delta[n-i-j] \\
      &= \sum_{i=0}^{N}\sum_{j=-\infty}^{\infty}b_{i}\delta[n-i-j]x[j] \\
-     &= \sum_{j=-\infty}^{\infty}x[j] \sum_{i=0}^{N} b_{i}\delta[n-j-i] \\ 
-     &= \sum_{j=-\infty}^{\infty}x[j] h[n-j] \\
+     &= \sum_{j=-\infty}^{\infty}x[j]\sum_{i=0}^{N}b_{i}\delta[n-j-i] \\ 
+     &= \sum_{j=-\infty}^{\infty}x[j]h[n-j] \\
      &= (x*h)[n] \\
 \end{aligned}
 $$
