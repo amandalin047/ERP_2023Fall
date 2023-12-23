@@ -49,9 +49,33 @@ def evoked_wrapper_from_data(bins, path, files, tmin, info, col_to_drop=['time',
             data[i] = eeglab_data
             dfs.append(df)
         except ValueError:
-            eeglab_data = np.empty(eeglab_data.shape)
-            dfs.append(pd.DataFrame(data=None, index=None, columns=df.columns))
-        evokeds[i] = mne.EvokedArray(data=eeglab_data, info=info, tmin=tmin)
+            try:
+                eeglab_data = np.empty(eeglab_data.shape)
+                data[i] = eeglab_data
+                dfs.append(pd.DataFrame(data=None, index=None, columns=df.columns))
+            except UnboundLocalError:
+                dfs.append(None)
+        try:
+            evokeds[i] = mne.EvokedArray(data=eeglab_data, info=info, tmin=tmin)
+        except UnboundLocalError:
+            pass
+
+    if evokeds[0] == None:
+        i = 0
+        shape = (0,0)
+        while 1:
+            if evokeds[i] != None:
+                shape = data[i].shape
+                break
+            i += 1
+
+        eeglab_data = np.empty(shape)
+        null_df = pd.DataFrame(data=None, index=None, columns=info.ch_names)
+        null_EvokedArray = mne.EvokedArray(data=eeglab_data, info=info, tmin=tmin)
+        evokeds = [j if j != None else null_EvokedArray for j in evokeds]
+        data = np.array([j if type(j) != type(None) else eeglab_data for j in data])
+        dfs = [j if type(j) != type(None) else null_df for j in dfs]
+              
     os.chdir('..')
     print(f'''Your bin data text files give {data[0].shape[0]} channels x {data[0].shape[1]} time points.
               (Note that the time points are the resampled time points if resampling is applied.)
